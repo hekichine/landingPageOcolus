@@ -4,6 +4,11 @@
   --pr-color: #293341;
   --sc-color: #616161;
   --ff-1: "Poppins", sans-serif;
+  --link-color: rgba(141, 197, 61, 1);
+  --link-color-active: rgba(201, 31, 40, 1);
+  --btn-bg-color: #c91f28;
+  --btn-color: #fff;
+  --btn-border-color: rgba(201, 31, 40, 1);
 }
 * {
   margin: 0;
@@ -42,4 +47,73 @@ h6 {
   line-height: 22px;
   letter-spacing: -0.01em;
   color: var(--sc-color);
+}
+.t4s-pr {
+  position: relative;
+}
+.t4s-pa {
+  position: absolute;
+}
+.t4s-pe-none {
+  pointer-events: none;
+}
+.t4s-pe-auto {
+  pointer-events: auto;
+}
+.link {
+  color: var(--link-color);
+}
+.link:hover {
+  color: var(--link-color-active);
+}
+a {
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+a.btn {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 32px;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: var(--ff-1);
+  border: 1px solid var(--border-color) !important;
+  color: var(--color) !important;
+  background-color: var(--bg-color) !important;
+  border-radius: 54px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+a.btn.btn-default:hover {
+  opacity: 0.8;
+}
+a.btn.btn-outline:hover {
+  --bg-color: var(--btn-bg-color);
+  --color: var(--btn-color);
+}
+.btn-default {
+  --border-color: var(--btn-border-color);
+  --color: var(--btn-color);
+  --bg-color: var(--btn-bg-color);
+}
+.btn-outline {
+  --border-color: var(--btn-border-color);
+  --bg-color: transparent;
+  --color: var(--btn-border-color);
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1620px;
+  }
 }
