@@ -86,7 +86,7 @@ a.btn {
   gap: 8px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1;
   font-family: var(--ff-1);
   border: 1px solid var(--border-color) !important;
   color: var(--color) !important;
@@ -115,7 +115,9 @@ a.btn.btn-outline:hover {
   --bg-color: transparent;
   --color: var(--btn-border-color);
 }
-
+p {
+  margin-bottom: 0;
+}
 /* badge */
 .badge-new {
   background: #8dc53d;
@@ -160,7 +162,7 @@ a.btn.btn-outline:hover {
   left: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  z-index: 2;
+  z-index: 9999;
 }
 .overlay.active {
   display: block;
@@ -237,10 +239,13 @@ a.btn.btn-outline:hover {
   .container {
     max-width: 1620px;
   }
+  .container-banner {
+    max-width: 1410px;
+  }
 }
 @media (max-width: 1024px) {
   a.btn {
-    padding: 10px 20px !important;
+    padding: 15px 20px !important;
   }
 }
 

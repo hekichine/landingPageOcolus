@@ -17,6 +17,26 @@
   .t4s-header .logo img {
     width: 150px;
   }
+  main .banner {
+    height: 750px;
+  }
+  .banner br {
+    display: none;
+  }
+  .power-lite svg {
+    width: 32px;
+    height: 32px;
+  }
+  .banner-content .power-lite {
+    padding: 10px 15px;
+    text-align: left;
+  }
+  .banner-content .row > p {
+    margin-bottom: 25px;
+  }
+  .banner-content .group-btn {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 992px) {
   .t4s-header .nav-list {
@@ -37,14 +57,30 @@
   .t4s-header .nav-list.active {
     display: block !important;
   }
+  .banner-content .banner-heading {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 @media (max-width: 767px) {
   .t4s-header .nav-list {
     width: 75%;
   }
+  main .banner {
+    height: 600px;
+  }
 }
 @media (max-width: 525px) {
   .t4s-topbar {
+    display: none;
+  }
+  .banner-content .banner-heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .t4s-header .btn svG {
     display: none;
   }
 }

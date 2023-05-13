@@ -86,7 +86,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .t4s-header ul {
   list-style: none;
@@ -142,14 +142,10 @@ main .banner::before {
   left: 0;
   background: linear-gradient(
     180deg,
-    #ffffff 8.87%,
+    #fff 8.87%,
     rgba(255, 255, 255, 0) 23.82%
   );
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
-  -moz-transform: matrix(1, 0, 0, -1, 0, 0);
-  -ms-transform: matrix(1, 0, 0, -1, 0, 0);
-  -o-transform: matrix(1, 0, 0, -1, 0, 0);
+  z-index: 1;
   pointer-events: none;
 }
 main .banner::after {
@@ -160,9 +156,86 @@ main .banner::after {
   bottom: 0;
   left: 0;
   background: linear-gradient(
-    180deg,
+    0deg,
     #ffffff 8.87%,
     rgba(255, 255, 255, 0) 23.82%
   );
   pointer-events: none;
+}
+
+.banner .banner-content {
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.banner-content .banner-heading {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: -0.015em;
+  color: #293341;
+  margin-bottom: 24px;
+}
+.banner-heading p {
+  font-weight: 600;
+}
+.banner-heading span {
+  background: linear-gradient(
+    97.94deg,
+    #c91f28 0%,
+    #dad44c 49.48%,
+    #8dc53d 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.banner-content .row > p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #616161;
+  margin-bottom: 48px;
+}
+
+.banner-content .power-lite {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: #ffffff;
+  /* Drop Shadow */
+  box-shadow: 0px 4px 16px rgba(181, 200, 176, 0.35);
+  border-radius: 999px;
+  width: fit-content;
+}
+.banner-content .group-btn {
+  margin-bottom: 100px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.banner-content .power-content {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #293341;
+}
+.power-content span:nth-child(2) {
+  font-weight: 500;
 }
