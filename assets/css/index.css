@@ -1,6 +1,19 @@
 /* top bar section */
 .t4s-topbar .section-inner {
   background-image: url("/assets/image/topbar/Mask_group.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+}
+.t4s-topbar .section-wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1050px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 31px 0;
+  min-height: 116px;
 }
 .t4s-topbar .topbar-content {
   display: flex;
@@ -15,4 +28,141 @@
   text-align: center;
   letter-spacing: -0.01em;
   color: #ffffff;
+}
+.t4s-topbar #countdown {
+  color: #fff;
+  display: flex;
+  gap: 35px;
+}
+.t4s-topbar #countdown div {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.t4s-topbar #countdown div span:nth-child(1) {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.01em;
+  background: linear-gradient(
+    97.26deg,
+    #c91f28 -49.23%,
+    #dad44c 24.61%,
+    #8dc53d 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.t4s-topbar #countdown div span:nth-child(2) {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+.t4s-topbar #topbar_close {
+  position: absolute;
+  top: 50%;
+  right: 52px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+/* header */
+.t4s-header {
+  padding-top: 48px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.t4s-header ul {
+  list-style: none;
+}
+.t4s-header ul li a {
+  padding: 0 16px;
+}
+.t4s-header .nav-link-item a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+.t4s-header .nav-link-item a:hover {
+  color: #c91f28;
+}
+.t4s-header .badge-new,
+.t4s-header .badge-hot {
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+}
+.t4s-header .btn {
+  font-family: var(--ff-1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  padding: 16px 32px;
+  border-radius: 54px;
+}
+/* main */
+/* banner */
+main .banner {
+  height: 970px;
+  position: relative;
+  overflow-y: hidden;
+  pointer-events: none;
+}
+main .banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff 8.87%,
+    rgba(255, 255, 255, 0) 23.82%
+  );
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+  -moz-transform: matrix(1, 0, 0, -1, 0, 0);
+  -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+  -o-transform: matrix(1, 0, 0, -1, 0, 0);
+  pointer-events: none;
+}
+main .banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff 8.87%,
+    rgba(255, 255, 255, 0) 23.82%
+  );
+  pointer-events: none;
 }
