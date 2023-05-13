@@ -171,21 +171,22 @@ a.btn.btn-outline:hover {
 }
 .marquee-content {
   display: flex;
-  animation: marquee 100s linear infinite;
+  animation: marquee 60s linear infinite;
   flex-direction: column;
-  -webkit-animation: marquee 100s linear infinite;
+  -webkit-animation: marquee 60s linear infinite;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
+  user-select: none;
 }
-.slide-item .marquee-content .marquee-item:not(:last-child) {
+.slide-item .marquee-content .marquee-item {
   margin-bottom: 15px;
 }
 .slide-item-reverse .marquee-content {
-  animation: marque-reverse 100s linear infinite;
-  -webkit-animation: marque-reverse 100s linear infinite;
+  animation: marque-reverse 60s linear infinite;
+  -webkit-animation: marque-reverse 60s linear infinite;
 }
 .marquee-content img {
   width: 100%;
