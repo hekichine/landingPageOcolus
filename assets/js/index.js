@@ -13,18 +13,7 @@ $(document).ready(function () {
 
   // menu bar
   $(document).on("click", ".menubar_btn", function () {
-    $(".overlay").toggleClass("active");
-    $(".nav-list").toggleClass("active");
-  });
-  $(document).on("click", ".overlay", function () {
-    $(".overlay").toggleClass("active");
-    $(".nav-list").toggleClass("active");
-  });
-  $(window).on("resize", function () {
-    if ($(window).width() >= 992) {
-      $(".overlay").removeClass("active");
-      $(".nav-list").removeClass("active");
-    }
+    $(".nav-list").slideToggle();
   });
   $(".slide-item .marquee-content").clone().appendTo(".marquee");
 });

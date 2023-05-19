@@ -9,6 +9,7 @@
   --btn-bg-color: #c91f28;
   --btn-color: #fff;
   --btn-border-color: rgba(201, 31, 40, 1);
+  --tophead-cl: #8dc53d;
 }
 * {
   margin: 0;
@@ -32,21 +33,24 @@ h6 {
 }
 .section-heading {
   font-family: var(--ff-1);
-  font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 62px;
   letter-spacing: -0.015em;
   color: var(--pr-color);
+  margin-bottom: 0;
 }
 .section-subheading {
   font-family: var(--ff-1);
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   letter-spacing: -0.01em;
   color: var(--sc-color);
+  margin-bottom: 0;
+}
+.tophead-cl {
+  color: var(--tophead-cl);
 }
 .t4s-pr {
   position: relative;
@@ -154,19 +158,7 @@ p {
   width: 100%;
   background-color: #fff;
 }
-.overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  z-index: 9999;
-}
-.overlay.active {
-  display: block;
-}
+
 /* slide marquee */
 .slide-item {
   margin: 0;
@@ -242,10 +234,24 @@ p {
   .container-banner {
     max-width: 1410px;
   }
+  .t4s-gx-xxl-90 {
+    --bs-gutter-x: 90px;
+  }
+  .t4s-gy-xxl-72 {
+    --bs-gutter-y: 72px;
+  }
 }
 @media (max-width: 1024px) {
   a.btn {
     padding: 15px 20px !important;
+  }
+  .section-heading {
+    font-size: 30px !important;
+    line-height: 36px !important;
+  }
+  .section-subheading {
+    font-size: 14px !important;
+    line-height: 22px !important;
   }
 }
 
@@ -254,7 +260,18 @@ p {
     font-size: 12px !important;
     line-height: 1 !important;
   }
-  .overlay {
-    left: 75%;
+}
+@media (max-width: 525px) {
+  .section-heading {
+    font-size: 24px !important;
+    line-height: 30px !important;
   }
+}
+
+.ratio_coach {
+  --bs-aspect-ratio: 22.43285%;
+}
+
+.ratio_reason {
+  --bs-aspect-ratio: 66.6666666%;
 }
