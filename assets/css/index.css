@@ -317,6 +317,9 @@ main .banner::after {
   padding-bottom: 20px;
 }
 /* reason */
+.reason .section-inner {
+  margin-bottom: 200px;
+}
 .reason .section-tophead {
   padding: 0 15px;
   margin-bottom: 100px;
@@ -362,6 +365,27 @@ main .banner::after {
   text-align: center;
   margin-bottom: 0;
   color: #616161;
+}
+/* isotope */
+.isotope .section-tophead .demo_count {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 128px;
+  margin: 0 auto;
+  width: fit-content;
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  background: linear-gradient(
+    97.94deg,
+    #c91f28 0%,
+    #dad44c 49.48%,
+    #8dc53d 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (min-width: 1400px) {
   .coach .col-text .item-inner {
