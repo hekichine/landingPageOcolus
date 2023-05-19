@@ -15,5 +15,5 @@ $(document).ready(function () {
   $(document).on("click", ".menubar_btn", function () {
     $(".nav-list").slideToggle();
   });
-  $(".slide-item .marquee-content").clone().appendTo(".marquee");
+  // $(".slide-item .marquee-content").clone().appendTo(".marquee");
 });

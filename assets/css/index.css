@@ -138,6 +138,7 @@ main .banner {
   overflow-y: hidden;
   pointer-events: none;
   margin-bottom: 100px;
+  background-color: #fbfffa;
 }
 main .banner::before {
   content: "";

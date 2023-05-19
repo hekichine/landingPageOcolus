@@ -30,6 +30,15 @@ h4,
 h5,
 h6 {
   font-family: var(--ff-1);
+  pointer-events: none;
+  user-select: none;
+}
+p {
+  pointer-events: none;
+  user-select: none;
+}
+img {
+  user-select: none;
 }
 .section-heading {
   font-family: var(--ff-1);
@@ -162,12 +171,14 @@ p {
 /* slide marquee */
 .slide-item {
   margin: 0;
+  user-select: none;
+  pointer-events: none;
 }
 .marquee-content {
   display: flex;
-  animation: marquee 60s linear infinite;
+  animation: marquee 200s linear infinite;
   flex-direction: column;
-  -webkit-animation: marquee 60s linear infinite;
+  -webkit-animation: marquee 200s linear infinite;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -176,11 +187,16 @@ p {
   user-select: none;
 }
 .slide-item .marquee-content .marquee-item {
-  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  filter: drop-shadow(0px 4px 16px rgba(181, 200, 176, 0.35));
+}
+.slide-item .marquee-content .marquee-item {
+  margin-bottom: 40px;
 }
 .slide-item-reverse .marquee-content {
-  animation: marque-reverse 60s linear infinite;
-  -webkit-animation: marque-reverse 60s linear infinite;
+  animation: marque-reverse 200s linear infinite;
+  -webkit-animation: marque-reverse 200s linear infinite;
 }
 .marquee-content img {
   width: 100%;
@@ -220,11 +236,11 @@ p {
   }
 }
 @media (min-width: 1240px) {
-  .t4s-gx-lg-15 {
-    --bs-gutter-x: 15px;
+  .t4s-gx-lg-40 {
+    --bs-gutter-x: 40px;
   }
-  .t4s-gy-lg-15 {
-    --bs-gutter-y: 15px;
+  .t4s-gy-lg-40 {
+    --bs-gutter-y: 40px;
   }
 }
 @media (min-width: 1600px) {
@@ -252,6 +268,9 @@ p {
   .section-subheading {
     font-size: 14px !important;
     line-height: 22px !important;
+  }
+  .slide-item .marquee-content .marquee-item {
+    margin-bottom: 15px;
   }
 }
 
