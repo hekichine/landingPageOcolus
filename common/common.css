@@ -179,9 +179,9 @@ p {
 }
 .marquee-content {
   display: flex;
-  animation: marquee 200s linear infinite;
+  animation: marquee 170s linear infinite;
   flex-direction: column;
-  -webkit-animation: marquee 200s linear infinite;
+  -webkit-animation: marquee 170s linear infinite;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -198,8 +198,8 @@ p {
   margin-bottom: 40px;
 }
 .slide-item-reverse .marquee-content {
-  animation: marque-reverse 200s linear infinite;
-  -webkit-animation: marque-reverse 200s linear infinite;
+  animation: marque-reverse 170s linear infinite;
+  -webkit-animation: marque-reverse 170s linear infinite;
 }
 .marquee-content img {
   width: 100%;
@@ -249,6 +249,9 @@ p {
 @media (min-width: 1600px) {
   .container {
     max-width: 1620px;
+  }
+  .container-ecom {
+    max-width: 1430px;
   }
   .container-banner {
     max-width: 1410px;
@@ -302,4 +305,7 @@ p {
 }
 .ratio_isotope {
   --bs-aspect-ratio: 67.9487179487%;
+}
+.ratio_ecom {
+  --bs-aspect-ratio: 56.249568256863%;
 }

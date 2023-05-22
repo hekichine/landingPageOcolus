@@ -30,13 +30,34 @@ $(document).ready(function () {
     $grid.isotope({ filter: filterValue });
   });
 
-  // change is-checked class on buttons
+  // change is-checked class on buttons isotope
   $(".btn-filters-group").each(function (i, buttonGroup) {
     var $buttonGroup = $(buttonGroup);
     $buttonGroup.on("click", "a", function () {
       event.preventDefault();
       $buttonGroup.find(".is-checked").removeClass("is-checked");
       $(this).addClass("is-checked");
+    });
+  });
+  $(".install-ec").click(function (e) {
+    e.preventDefault();
+    window.open(
+      `https://ecomposer.app/install?shop=${$("#input_install").val()}`,
+      "_blank"
+    );
+  });
+
+  // change is-checked class on buttons tabs
+  $(".tabs-group").each(function (i, buttonGroup) {
+    var $buttonGroup = $(buttonGroup);
+    $buttonGroup.on("click", ".tabs-item", function () {
+      event.preventDefault();
+      $buttonGroup.find(".is-checked").removeClass("is-checked");
+      $(this).addClass("is-checked");
+
+      // active content
+      $(".tabs-content.active").removeClass("active");
+      $(`.tabs-content.${$(this).data("tabs")}`).addClass("active");
     });
   });
 });
