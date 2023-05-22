@@ -58,6 +58,9 @@ img {
   color: var(--sc-color);
   margin-bottom: 0;
 }
+.section-tophead {
+  padding: 0 15px;
+}
 .tophead-cl {
   color: var(--tophead-cl);
 }
@@ -256,6 +259,9 @@ p {
   .t4s-gy-xxl-72 {
     --bs-gutter-y: 72px;
   }
+  .t4s-gx-xxl-60 {
+    --bs-gutter-x: 60px;
+  }
 }
 @media (max-width: 1024px) {
   a.btn {
@@ -293,4 +299,7 @@ p {
 
 .ratio_reason {
   --bs-aspect-ratio: 66.6666666%;
+}
+.ratio_isotope {
+  --bs-aspect-ratio: 67.9487179487%;
 }

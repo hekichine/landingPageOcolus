@@ -321,7 +321,6 @@ main .banner::after {
   margin-bottom: 200px;
 }
 .reason .section-tophead {
-  padding: 0 15px;
   margin-bottom: 100px;
 }
 .reason .section-subheading {
@@ -367,6 +366,44 @@ main .banner::after {
   color: #616161;
 }
 /* isotope */
+.isotope {
+  background-color: #fbfffa;
+  position: relative;
+}
+.isotope::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 450px;
+  content: "";
+  background: linear-gradient(
+    180deg,
+    #ffffff 8.87%,
+    rgba(255, 255, 255, 0) 23.82%
+  );
+  z-index: 1;
+}
+.isotope::after {
+  position: absolute;
+  height: 750px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(
+    180deg,
+    #ffffff 8.87%,
+    rgba(255, 255, 255, 0) 23.82%
+  );
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  z-index: 1;
+}
+.isotope .section-inner {
+  position: relative;
+  z-index: 9;
+  padding-bottom: 235px;
+}
 .isotope .section-tophead .demo_count {
   font-family: "Poppins";
   font-style: normal;
@@ -374,10 +411,6 @@ main .banner::after {
   font-size: 128px;
   margin: 0 auto;
   width: fit-content;
-  /* leading-trim and text-edge are draft CSS properties.
-
-Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-*/
   background: linear-gradient(
     97.94deg,
     #c91f28 0%,
@@ -386,7 +419,102 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 13px;
 }
+.isotope .section-heading {
+  margin-bottom: 24px;
+}
+.isotope .section-subheading {
+  margin-bottom: 72px;
+}
+.isotope-wrap ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.isotope-wrap ul a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 40px;
+  border: 1px solid #c91f28;
+  border-radius: 39px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #c91f28;
+}
+.isotope-wrap ul li {
+  margin: 0 8px;
+}
+.isotope-wrap ul a.is-checked {
+  background: #c91f28;
+  border-color: #c91f28;
+  color: #fff;
+}
+.isotope-wrap ul a:hover {
+  background: #c91f28;
+  border-color: #c91f28;
+  color: #fff;
+}
+.isotope .section-tophead {
+  margin-bottom: 100px;
+}
+.isotope .isotope-item .item-inner .img-wrap {
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0px 4px 32px rgba(181, 200, 176, 0.16);
+  margin-bottom: 32px;
+}
+.isotope .item-title {
+  padding: 0 15px;
+}
+.isotope .isotope-item .item-title a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  color: #293341;
+  position: relative;
+}
+.isotope .isotope-item .title-badge {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  transform: translateX(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 6px;
+  border-radius: 39px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+}
+.isotope .isotope-item .title-badge.new {
+  background: #8dc53d;
+}
+.isotope .isotope-item .title-badge.hot {
+  background: #c91f28;
+}
+
 @media (min-width: 1400px) {
   .coach .col-text .item-inner {
     padding-left: 40px;

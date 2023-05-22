@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+  br {
+    display: none !important;
+  }
   .t4s-topbar .section-wrap {
     gap: 15px;
     padding: 15px 32px;
@@ -61,10 +64,41 @@
   .reason .section-tophead {
     margin-bottom: 30px;
   }
+  .reason .section-inner {
+    margin-bottom: 60px;
+  }
+  .coach .comerce-coach .item-wrap {
+    overflow: hidden;
+  }
+  .isotope .section-tophead .demo_count {
+    font-size: 70px;
+  }
 }
 @media (max-width: 1023px) {
   .reason .col-inner .content-head {
     font-size: 20px;
+  }
+  .isotope-wrap ul a {
+    padding: 10px 25px;
+    line-height: 1;
+  }
+  .isotope-wrap ul li {
+    margin: 0 5px;
+  }
+  .isotope .section-tophead {
+    margin-bottom: 50px;
+  }
+  .isotope .section-subheading {
+    margin-bottom: 40px;
+  }
+  .isotope .isotope-item .item-title a {
+    font-size: 16px;
+  }
+  .isotope .isotope-item .item-inner .img-wrap {
+    margin-bottom: 15px;
+  }
+  .isotope .section-inner {
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 992px) {
@@ -107,6 +141,11 @@
   }
 }
 @media (max-width: 767px) {
+  .isotope-wrap ul {
+    overflow-x: scroll;
+    padding: 0 20px;
+    justify-content: flex-start;
+  }
   main .banner {
     height: 600px;
   }

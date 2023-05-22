@@ -16,4 +16,27 @@ $(document).ready(function () {
     $(".nav-list").slideToggle();
   });
   // $(".slide-item .marquee-content").clone().appendTo(".marquee");
+
+  // isotope
+  // init Isotope
+  var $grid = $(".isotope-grid").isotope({
+    itemSelector: ".isotope-item",
+    layoutMode: "fitRows",
+  });
+  // bind filter button click
+  $("#filters-group").on("click", ".btn-filter", function () {
+    var filterValue = $(this).attr("data-filter");
+    // use filterFn if matches value
+    $grid.isotope({ filter: filterValue });
+  });
+
+  // change is-checked class on buttons
+  $(".btn-filters-group").each(function (i, buttonGroup) {
+    var $buttonGroup = $(buttonGroup);
+    $buttonGroup.on("click", "a", function () {
+      event.preventDefault();
+      $buttonGroup.find(".is-checked").removeClass("is-checked");
+      $(this).addClass("is-checked");
+    });
+  });
 });
