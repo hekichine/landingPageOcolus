@@ -1,3 +1,18 @@
+@media (max-width: 1366px) {
+  .masonry-isotope .col-content h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .masonry-isotope .col-wrap {
+    padding: 30px !important;
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+  .masonry-isotope .col-wrap .img-wrap {
+    width: 100%;
+    flex: unset;
+  }
+}
 @media (max-width: 1200px) {
   br {
     display: none !important;
@@ -76,6 +91,12 @@
   .ecomposer .section-inner {
     margin-bottom: 60px;
   }
+  .masonry-isotope .col-wrap {
+    flex-wrap: wrap;
+  }
+  .masonry-isotope .col-content h3 {
+    margin-bottom: 15px;
+  }
 }
 @media (max-width: 1023px) {
   .reason .col-inner .content-head {
@@ -139,8 +160,14 @@
   .tabs .tabs-group {
     margin-bottom: 50px;
   }
+  .masonry-isotope .section-inner {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 992px) {
+  .masonry-isotope .col-wrap {
+    flex-wrap: nowrap;
+  }
   .t4s-header {
     background-color: #fff;
   }
@@ -217,6 +244,13 @@
   .tabs .section-inner {
     padding-bottom: 40px;
   }
+  .masonry-isotope .col-content h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .masonry-isotope .section-inner {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 525px) {
   .ecomposer .form-register input {
@@ -250,6 +284,9 @@
   }
   .t4s-header .btn {
     display: none;
+  }
+  .masonry-isotope .col-inner .col-wrap {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 350px) {

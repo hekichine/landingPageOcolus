@@ -245,6 +245,12 @@ p {
   .t4s-gy-lg-40 {
     --bs-gutter-y: 40px;
   }
+  .t4s-gx-lg-60 {
+    --bs-gutter-x: 60px;
+  }
+  .t4s-gy-lg-60 {
+    --bs-gutter-y: 60px;
+  }
 }
 @media (min-width: 1600px) {
   .container {
@@ -252,6 +258,9 @@ p {
   }
   .container-ecom {
     max-width: 1430px;
+  }
+  .container-masonry {
+    max-width: 1440px;
   }
   .container-banner {
     max-width: 1410px;

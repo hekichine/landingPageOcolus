@@ -60,4 +60,12 @@ $(document).ready(function () {
       $(`.tabs-content.${$(this).data("tabs")}`).addClass("active");
     });
   });
+  // masonry layoutmode
+
+  $(".masonry-row").isotope({
+    itemSelector: ".masonry-item",
+    masonry: {
+      columnWidth: 1,
+    },
+  });
 });
