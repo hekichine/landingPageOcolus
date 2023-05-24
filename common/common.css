@@ -271,6 +271,9 @@ p {
   .t4s-gy-xxl-72 {
     --bs-gutter-y: 72px;
   }
+  .t4s-gy-xxl-60 {
+    --bs-gutter-y: 60px;
+  }
   .t4s-gx-xxl-60 {
     --bs-gutter-x: 60px;
   }

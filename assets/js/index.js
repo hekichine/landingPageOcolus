@@ -49,7 +49,7 @@ $(document).ready(function () {
 
   // change is-checked class on buttons tabs
   $(".tabs-group").each(function (i, buttonGroup) {
-    var $buttonGroup = $(buttonGroup);
+    let $buttonGroup = $(buttonGroup);
     $buttonGroup.on("click", ".tabs-item", function () {
       event.preventDefault();
       $buttonGroup.find(".is-checked").removeClass("is-checked");
@@ -67,5 +67,17 @@ $(document).ready(function () {
     masonry: {
       columnWidth: 1,
     },
+  });
+
+  // slide marquee
+  $(".slider")?.map((slide) => {
+    slide.slider = new Swiper(".slider", {
+      loop: true,
+      speed: 15000,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 0,
+      },
+    });
   });
 });
