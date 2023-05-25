@@ -1247,6 +1247,13 @@ main .banner::after {
   -o-transition: 0.3s ease;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
+.video-popup .img_thumb .icon svg {
+  transform: translateX(10%);
+  -webkit-transform: translateX(10%);
+  -moz-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  -o-transform: translateX(10%);
+}
 .video-popup .img_thumb .play-btn-popup:hover {
   box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.5);
 }
@@ -1355,6 +1362,7 @@ main .banner::after {
   line-height: 22px;
   /* or 157% */
 
+  text-align: justify;
   letter-spacing: -0.01em;
 
   /* Common/Secondary */
@@ -1390,6 +1398,7 @@ main .banner::after {
   /* identical to box height, or 133% */
 
   letter-spacing: -0.01em;
+  text-align: left;
 
   color: #293341;
 }
@@ -1397,6 +1406,102 @@ main .banner::after {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+.faq .box-1 svg {
+  flex: 1 0 auto;
+}
+.hero_image .section-inner {
+  padding: 200px 0;
+  background-image: url("/assets/image/heroimage/1.jpg");
+}
+.hero_image .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62px;
+  /* or 129% */
+
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+.hero_image .check-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.hero_image .check-group {
+  gap: 72px;
+  margin-bottom: 72px;
+}
+.hero_image .group-btn {
+  display: flex;
+  justify-content: center;
+}
+.hero_image .btn-default {
+  border: none !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 64px;
+  gap: 16px;
+  background: #c91f28;
+  border-radius: 54px;
+}
+.hero_image .btn-default .text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.01em;
+
+  color: #ffffff;
+}
+.hero_image .btn-default .wrap {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.hero_image .cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.hero_image .cost del {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+
+  letter-spacing: -0.01em;
+  text-decoration-line: line-through;
+
+  color: #ffffff;
+}
+.hero_image .cost span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height, or 130% */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #ffffff;
 }
 @media (min-width: 1400px) {
   .coach .col-text .item-inner {

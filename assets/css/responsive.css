@@ -228,6 +228,36 @@
   .video-popup .col-content p {
     font-size: 13px;
   }
+  .faq .faq-item.active {
+    margin-top: 30px;
+  }
+  .faq .faq-item {
+    padding: 20px;
+  }
+  .faq .faq-button {
+    margin-top: 15px;
+  }
+  .faq .faq-item .faq-content {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .faq .box-1 span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .faq .box-1 {
+    gap: 10px;
+  }
+  .faq .title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 0;
+  }
+  .faq .section-inner {
+    padding: 50px 0;
+  }
 }
 @media (max-width: 992px) {
   .masonry-isotope .col-wrap {
@@ -340,6 +370,21 @@
     font-size: 24px;
     line-height: 30px;
   }
+  .faq .box-1 span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .faq .box-1 svg {
+    width: 20px;
+    height: 20px;
+  }
+  .faq .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .faq .section-inner {
+    padding: 40px 0;
+  }
 }
 @media (max-width: 525px) {
   .ecomposer .form-register input {
@@ -385,6 +430,13 @@
     -moz-transform: translateX(50%) translateY(-100%);
     -ms-transform: translateX(50%) translateY(-100%);
     -o-transform: translateX(50%) translateY(-100%);
+  }
+  .faq .box-1 span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .faq .faq-item {
+    padding: 10px;
   }
 }
 @media (max-width: 350px) {
