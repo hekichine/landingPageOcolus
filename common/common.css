@@ -248,6 +248,9 @@ p {
   .t4s-gx-lg-60 {
     --bs-gutter-x: 60px;
   }
+  .t4s-gx-lg-90 {
+    --bs-gutter-x: 90px;
+  }
   .t4s-gy-lg-60 {
     --bs-gutter-y: 60px;
   }
@@ -264,6 +267,9 @@ p {
   }
   .container-banner {
     max-width: 1410px;
+  }
+  .container-1530 {
+    max-width: 1530px;
   }
   .t4s-gx-xxl-90 {
     --bs-gutter-x: 90px;

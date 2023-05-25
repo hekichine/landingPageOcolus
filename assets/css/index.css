@@ -1143,6 +1143,261 @@ main .banner::after {
   background: #c91f28;
   border-radius: 39px;
 }
+/* footer and header style */
+.show-style .section-inner {
+  background: #fbfffa;
+  padding: 200px 0;
+}
+.show-style img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.show-style .img {
+  filter: drop-shadow(1.03651px 3.10952px 12.4381px rgba(0, 0, 0, 0.15));
+}
+.show-style .img:not(:last-child) {
+  margin-bottom: 48px;
+}
+.show-style .section-tophead {
+  margin-bottom: 100px;
+}
+.show-style .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height, or 130% */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #293341;
+  margin-bottom: 0;
+}
+/* video popup */
+.video-popup .section-inner {
+  padding: 200px 0;
+}
+.video-popup .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #293341;
+  margin-bottom: 100px;
+}
+.video-popup .title span {
+  color: #f66d6e;
+}
+.video-popup .col-inner {
+  padding: 16px 16px 60px;
+}
+.video-popup .col-inner .img_thumb {
+  margin-bottom: 32px;
+}
+.video-popup .img_thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-popup .img_thumb .play-btn-popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+.video-popup .img_thumb .icon {
+  display: inline-flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #c91f28;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  font-size: 20px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.video-popup .img_thumb .play-btn-popup:hover {
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.5);
+}
+.video-popup .img_thumb .icon:hover {
+  background-color: #c91f28;
+  color: #fff;
+}
+.video-popup .col-content {
+  text-align: center;
+}
+.video-popup .col-content a {
+  font-family: "Poppins";
+  font-style: normal;
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #293341;
+  margin-bottom: 16px;
+}
+.video-popup .col-content a:hover {
+  color: #c91f28;
+}
+.video-popup .col-content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  /* Common/Secondary */
+
+  color: #616161;
+  margin-bottom: 0;
+}
+.faq .section-inner {
+  padding: 200px 0;
+  background-color: #fbfffa;
+}
+.faq .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #293341;
+  margin-bottom: 44px;
+}
+.faq .faq-item:first-child .faq-content {
+  display: block;
+}
+
+.faq .faq-content {
+  display: none;
+}
+.faq .faq-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  align-items: center;
+  margin-top: 48px;
+}
+.faq .faq-item {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.faq .faq-item.active {
+  margin-top: 48px;
+  background-color: #fff;
+  box-shadow: 0px 4px 16px rgba(181, 200, 176, 0.35);
+}
+.faq .faq-item {
+  padding: 0 48px;
+}
+.faq .faq-item .faq-content {
+  padding-top: 32px;
+  padding-bottom: 72px;
+  padding-left: 48px;
+  padding-right: 20px;
+}
+.faq .faq-content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+
+  letter-spacing: -0.01em;
+
+  /* Common/Secondary */
+
+  color: #616161;
+  margin-bottom: 0;
+}
+.faq .faq-button:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.faq .faq-button .arrow svg {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.faq .faq-button.active .arrow svg {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+.faq .box-1 span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.01em;
+
+  color: #293341;
+}
+.faq .box-1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 @media (min-width: 1400px) {
   .coach .col-text .item-inner {
     padding-left: 40px;

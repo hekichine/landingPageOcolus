@@ -80,4 +80,18 @@ $(document).ready(function () {
       },
     });
   });
+  // video popup
+  $(".play-btn-popup").magnificPopup({
+    disableOn: 700,
+    type: "iframe",
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
+  });
+  $(document).on("click", ".faq-button", function () {
+    $(this).toggleClass("active");
+    $(this).parent(".faq-item").toggleClass("active");
+    $(this).next(".faq-content").slideToggle();
+  });
 });

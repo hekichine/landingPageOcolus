@@ -1,3 +1,8 @@
+@media (max-width: 1599px) {
+  .video-popup br {
+    display: none;
+  }
+}
 @media (max-width: 1366px) {
   .masonry-isotope .col-content h3 {
     font-size: 30px;
@@ -103,6 +108,9 @@
   .banner-slide-2 .section-subheading {
     margin-bottom: 50px;
   }
+  .video-popup .col-inner {
+    padding: 0;
+  }
 }
 @media (max-width: 1023px) {
   .reason .col-inner .content-head {
@@ -187,6 +195,38 @@
   }
   .partner .section-inner {
     padding-bottom: 50px;
+  }
+  .show-style .section-tophead {
+    margin-bottom: 40px;
+  }
+  .show-style .title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .show-style .section-inner {
+    padding: 40px 0;
+  }
+  .video-popup .section-inner {
+    padding: 40px 0;
+  }
+  .video-popup .col-inner {
+    padding: 0;
+  }
+  .video-popup .title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .video-popup .col-inner .img_thumb {
+    margin-bottom: 15px;
+  }
+  .video-popup .col-content a {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .video-popup .col-content p {
+    font-size: 13px;
   }
 }
 @media (max-width: 992px) {
@@ -288,6 +328,17 @@
   }
   .partner .section-inner {
     padding-bottom: 40px;
+  }
+  .show-style .img:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .show-style .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .video-popup .title {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 @media (max-width: 525px) {
