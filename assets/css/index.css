@@ -1441,6 +1441,7 @@ main .banner::after {
 .hero_image .group-btn {
   display: flex;
   justify-content: center;
+  gap: 16px;
 }
 .hero_image .btn-default {
   border: none !important;
@@ -1502,6 +1503,37 @@ main .banner::after {
   letter-spacing: -0.01em;
 
   color: #ffffff;
+}
+.hero_image .check-item span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+.hero_image .btn-outline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 64px;
+  border: 2px solid #c91f28;
+  border-radius: 54px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+
+  letter-spacing: -0.01em;
+
+  color: #c91f28;
 }
 @media (min-width: 1400px) {
   .coach .col-text .item-inner {
