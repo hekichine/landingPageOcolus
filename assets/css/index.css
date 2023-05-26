@@ -2,7 +2,6 @@
 
 /* top bar section */
 .t4s-topbar .section-inner {
-  background-image: url("/assets/image/topbar/Mask_group.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: content-box;
@@ -537,7 +536,6 @@ main .banner::after {
 /* ecomposer */
 
 .ecomposer .section-inner {
-  background-image: url("/assets/image/ecomposer/background.jpg");
   background-position: right;
   background-size: auto;
   background-repeat: no-repeat;
@@ -1412,7 +1410,6 @@ main .banner::after {
 }
 .hero_image .section-inner {
   padding: 200px 0;
-  background-image: url("/assets/image/heroimage/1.jpg");
 }
 .hero_image .title {
   font-family: "Poppins";
