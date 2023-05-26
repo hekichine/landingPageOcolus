@@ -1098,8 +1098,47 @@ main .banner::after {
 }
 .partner .partner-inner .img {
   margin-bottom: 15px;
+  position: relative;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
 }
-
+.partner .partner-inner .img img {
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+.partner .partner-inner .img::before {
+  position: absolute;
+  content: "";
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  /*DropShadow*/
+  filter: drop-shadow(0px 4px 16px rgba(181, 200, 176, 0.35));
+  border-radius: 24px;
+  background: linear-gradient(
+    97.94deg,
+    #c91f28 0%,
+    #dad44c 49.48%,
+    #8dc53d 100%
+  );
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.partner .partner-inner:hover .img::before {
+  opacity: 1;
+}
 .partner .partner-content h4 {
   font-family: "Poppins";
   font-style: normal;
