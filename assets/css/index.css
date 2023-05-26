@@ -570,6 +570,7 @@ main .banner::after {
   );
   overflow: hidden;
 }
+
 .ecomposer .ec-subtitle {
   font-family: "Poppins";
   font-weight: 400;
