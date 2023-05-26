@@ -103,4 +103,23 @@ $(document).ready(function () {
     $(this).parent(".faq-item").toggleClass("active");
     $(this).next(".faq-content").slideToggle();
   });
+  // back to top
+  let body_height = $(document).height();
+
+  $(window).on("scroll", function () {
+    let current_pos = $(this).scrollTop();
+    let deg = (current_pos / body_height) * 100;
+
+    $(".btt-progress").css(
+      "background",
+      `conic-gradient(rgba(0, 0, 0) ${deg * 3.6}deg , rgb(255, 255, 255) 0deg)`
+    );
+
+    current_pos > 100
+      ? $(".back-to-top").addClass("active")
+      : $(".back-to-top").removeClass("active");
+  });
+  $(document).on("click", ".back-to-top", function () {
+    $(window).scrollTop(0);
+  });
 });
