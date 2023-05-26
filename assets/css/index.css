@@ -192,7 +192,7 @@ main .banner::after {
 .banner-heading p {
   font-weight: 600;
 }
-.banner-heading span {
+.banner-heading #typewriter-text {
   background: linear-gradient(
     97.94deg,
     #c91f28 0%,
@@ -202,6 +202,21 @@ main .banner::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+.banner-heading #typewriter-suffix {
+  background: linear-gradient(
+    97.94deg,
+    #c91f28 0%,
+    #dad44c 49.48%,
+    #8dc53d 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 5px;
+  overflow: hidden;
+  display: inline-flex;
+  margin-left: 8px;
 }
 .banner-content .row > p {
   font-family: "Poppins";

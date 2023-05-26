@@ -17,6 +17,15 @@ $(document).ready(function () {
   });
   // $(".slide-item .marquee-content").clone().appendTo(".marquee");
 
+  // text writter
+  $("#type_writter").typewriter({
+    prefix: "",
+    text: ["Fashion", "Furniture", "Electronics", "Sports", "Plant"],
+    typeDelay: 100,
+    waitingTime: 1500,
+    blinkSpeed: 800,
+  });
+
   // isotope
   // init Isotope
   var $grid = $(".isotope-grid").isotope({
