@@ -806,6 +806,7 @@ main .banner::after {
   transition-delay: 0.3s;
   position: relative;
   opacity: 1;
+  width: unset;
   visibility: visible;
   transform: translateY(0);
   -webkit-transform: translateY(0);
