@@ -112,12 +112,15 @@ $(document).ready(function () {
 
     $(".btt-progress").css(
       "background",
-      `conic-gradient(rgba(0, 0, 0) ${deg * 3.6}deg , rgb(255, 255, 255) 0deg)`
+      `conic-gradient(rgba(0, 0, 0,0.25) ${
+        deg * 3.6
+      }deg , rgb(255, 255, 255) 0deg)`
     );
 
     current_pos > 100
       ? $(".back-to-top").addClass("active")
       : $(".back-to-top").removeClass("active");
+    console.log(current_pos, $(document).height());
   });
   $(document).on("click", ".back-to-top", function () {
     $(window).scrollTop(0);
