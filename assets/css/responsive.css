@@ -176,6 +176,7 @@
   }
   .masonry-isotope .section-inner {
     margin-bottom: 50px;
+    padding-top: 50px;
   }
   .slider .swiper-slide .slide-img {
     max-height: 250px;
@@ -385,6 +386,7 @@
   }
   .masonry-isotope .section-inner {
     margin-bottom: 40px;
+    padding-top: 40px;
   }
   .slider .swiper-slide .slide-img {
     max-height: 200px;

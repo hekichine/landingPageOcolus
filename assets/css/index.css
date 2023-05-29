@@ -178,6 +178,7 @@ main .banner::after {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+  z-index: 20;
 }
 
 .banner-content .banner-heading {
@@ -259,6 +260,8 @@ main .banner::after {
 }
 .power-content span:nth-child(2) {
   font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 /* coach */
 .coach {
@@ -348,6 +351,7 @@ main .banner::after {
 .reason .section-heading {
   font-weight: 500;
   line-height: 52px;
+  font-size: 40px;
 }
 .reason .section-heading span {
   font-weight: 600;
@@ -598,6 +602,7 @@ main .banner::after {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
+  gap: 6px;
 }
 
 .ecomposer .star-group .five-star {
@@ -716,7 +721,7 @@ main .banner::after {
   letter-spacing: -0.01em;
 
   color: #293341;
-  margin-bottom: 17px;
+  margin-bottom: 24px;
 }
 .tabs .des {
   font-family: "Poppins";
@@ -823,6 +828,7 @@ main .banner::after {
 }
 /* masonry */
 .masonry-isotope .section-inner {
+  padding-top: 100px;
   margin-bottom: 190px;
 }
 .masonry-isotope .col-inner {
@@ -1046,7 +1052,7 @@ main .banner::after {
 /* slider */
 
 .slider {
-  padding-bottom: 40px;
+  padding: 20px 0;
   user-select: none;
   pointer-events: none;
   overflow: hidden;
@@ -1061,7 +1067,8 @@ main .banner::after {
 }
 .slider .swiper-wrapper .swiper-slide {
   max-width: fit-content;
-  filter: drop-shadow(0px 4px 16px rgba(181, 200, 176, 0.35));
+  /* filter: drop-shadow(0px 4px 16px rgba(181, 200, 176, 0.35)); */
+  box-shadow: 0px 4px 16px rgba(181, 200, 176, 0.35);
   border-radius: 8px;
   overflow: hidden;
   margin: 0 20px;
@@ -1208,7 +1215,8 @@ main .banner::after {
   object-fit: cover;
 }
 .show-style .img {
-  filter: drop-shadow(1.03651px 3.10952px 12.4381px rgba(0, 0, 0, 0.15));
+  box-shadow: 1.03651px 3.10952px 12.4381px rgba(0, 0, 0, 0.15);
+  /* filter: drop-shadow(1.03651px 3.10952px 12.4381px rgba(0, 0, 0, 0.15)); */
 }
 .show-style .img:not(:last-child) {
   margin-bottom: 48px;
@@ -1481,6 +1489,9 @@ main .banner::after {
   color: #ffffff;
   margin-bottom: 48px;
 }
+.hero_image .title span {
+  font-weight: 400;
+}
 .hero_image .check-item {
   display: flex;
   justify-content: center;
@@ -1605,5 +1616,8 @@ main .banner::after {
   }
   .coach {
     margin-bottom: 200px;
+  }
+  .banner .banner-content {
+    top: 60%;
   }
 }
