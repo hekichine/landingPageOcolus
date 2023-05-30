@@ -98,7 +98,11 @@ $(document).ready(function () {
     preloader: false,
     fixedContentPos: false,
   });
+  // accordion
   $(document).on("click", ".faq-button", function () {
+    $(".faq-item.active").removeClass("active");
+    $(".faq-button.active").removeClass("active");
+    $(".faq-content").hide();
     $(this).toggleClass("active");
     $(this).parent(".faq-item").toggleClass("active");
     $(this).next(".faq-content").slideToggle();

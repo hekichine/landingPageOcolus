@@ -604,6 +604,9 @@ main .banner::after {
   margin-bottom: 24px;
   gap: 6px;
 }
+.ecomposer .star-group svg {
+  margin-bottom: 3px;
+}
 
 .ecomposer .star-group .five-star {
   font-family: "Poppins";
