@@ -998,7 +998,7 @@ main .banner::after {
   margin-bottom: 100px;
 }
 .banner-slide-2 .section-inner {
-  padding-bottom: 360px;
+  padding-bottom: 160px;
   z-index: 9;
   position: relative;
 }
@@ -1602,9 +1602,17 @@ main .banner::after {
 
   color: #c91f28;
 }
+@media (min-width: 1366px) {
+  .coach {
+    margin-bottom: 100px;
+  }
+}
 @media (min-width: 1400px) {
   .coach .col-text .item-inner {
     padding-left: 40px;
+  }
+  .coach {
+    margin-bottom: 150px;
   }
 }
 @media (min-width: 1600px) {
@@ -1622,5 +1630,8 @@ main .banner::after {
   }
   .banner .banner-content {
     top: 60%;
+  }
+  .banner-slide-2 .section-inner {
+    padding-bottom: 360px;
   }
 }
