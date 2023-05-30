@@ -347,6 +347,7 @@
     justify-content: start;
     margin-bottom: 40px;
     overflow-x: scroll;
+    padding-bottom: 15px;
   }
   .isotope .section-heading {
     margin-bottom: 15px;
@@ -359,6 +360,7 @@
     overflow-x: scroll;
     padding: 0 20px;
     justify-content: flex-start;
+    padding-bottom: 15px;
   }
   main .banner {
     height: 600px;
@@ -446,6 +448,13 @@
   }
   .hero_image .group-btn {
     flex-wrap: wrap;
+  }
+  .power-content span:nth-child(2) {
+    font-size: 14px;
+  }
+  .hero_image .btn-outline {
+    --color: #fff;
+    --border-color: #fff;
   }
 }
 @media (max-width: 525px) {

@@ -102,7 +102,7 @@ $(document).ready(function () {
   $(document).on("click", ".faq-button", function () {
     $(".faq-item.active").removeClass("active");
     $(".faq-button.active").removeClass("active");
-    $(".faq-content").hide();
+    $(".faq-content").hide("slide");
     $(this).toggleClass("active");
     $(this).parent(".faq-item").toggleClass("active");
     $(this).next(".faq-content").slideToggle();
@@ -124,7 +124,7 @@ $(document).ready(function () {
     current_pos > 100
       ? $(".back-to-top").addClass("active")
       : $(".back-to-top").removeClass("active");
-    console.log(current_pos, $(document).height());
+    // console.log(current_pos, $(document).height());
   });
   $(document).on("click", ".back-to-top", function () {
     $(window).scrollTop(0);
