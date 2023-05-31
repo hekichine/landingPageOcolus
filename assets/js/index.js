@@ -78,17 +78,6 @@ $(document).ready(function () {
     },
   });
 
-  // slide marquee
-  $(".slider")?.map((slide) => {
-    slide.slider = new Swiper(".slider", {
-      loop: true,
-      speed: 15000,
-      slidesPerView: "auto",
-      autoplay: {
-        delay: 0,
-      },
-    });
-  });
   // video popup
   $(".play-btn-popup").magnificPopup({
     disableOn: 700,
