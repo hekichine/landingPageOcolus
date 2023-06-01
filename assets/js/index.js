@@ -69,6 +69,21 @@ $(document).ready(function () {
       $(`.tabs-content.${$(this).data("tabs")}`).addClass("active");
     });
   });
+  // isotope
+  // init Isotope
+  var $grid2 = $(".tabs-content").isotope({
+    itemSelector: ".tab-content-item",
+    layoutMode: "fitRows",
+    filter: ".product",
+  });
+  // bind filter button click
+  $("#tabs-group").on("click", ".tabs-item", function () {
+    // console.log(12321);
+    var filterValue = $(this).attr("data-filter");
+    // use filterFn if matches value
+    $grid2.isotope({ filter: filterValue });
+  });
+
   // masonry layoutmode
 
   $(".masonry-row").isotope({
