@@ -806,7 +806,7 @@ main .banner::after {
   padding-top: 100px;
   margin-bottom: 190px;
 }
-.masonry-isotope .col-inner {
+.masonry-isotope .col-wrap {
   --bs-aspect-ratio: calc(100% / calc(var(--ratio)));
 }
 .masonry-isotope .masonry-item:not(.masonry-3) .col-inner {
