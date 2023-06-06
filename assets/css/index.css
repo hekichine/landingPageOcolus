@@ -203,6 +203,7 @@ main .banner::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-weight: 700;
 }
 .banner-heading #typewriter-suffix {
   background: linear-gradient(
@@ -1450,6 +1451,8 @@ main .banner::after {
 }
 .hero_image .section-inner {
   padding: 200px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero_image .title {
   font-family: "Poppins";

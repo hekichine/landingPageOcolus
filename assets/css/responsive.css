@@ -17,6 +17,33 @@
     width: 100%;
     flex: unset;
   }
+  section:not(.t4s-header, .t4s-topbar, .coach) .section-inner {
+    padding: 60px 0 !important;
+  }
+  .ecomposer .des br {
+    display: none;
+  }
+  .masonry-isotope .section-inner {
+    margin-bottom: 50px;
+  }
+  .hero_image .check-group {
+    gap: 20px;
+  }
+  .reason .section-inner {
+    margin-bottom: 80px;
+  }
+  .ecomposer .section-inner {
+    margin-bottom: 100px;
+  }
+  .isotope .isotope-item .item-inner .img-wrap,
+  .tabs .col-item .item-inner .img-wrap {
+    margin-bottom: 15px;
+  }
+  .isotope .isotope-item .item-title a,
+  .tabs .col-item .item-title a {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 @media (max-width: 1200px) {
   .t4s-topbar .section-wrap {
