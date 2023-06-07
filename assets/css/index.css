@@ -236,7 +236,7 @@ main .banner::after {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 12px 30px;
   background: #ffffff;
   /* Drop Shadow */
   box-shadow: 0px 4px 16px rgba(181, 200, 176, 0.35);
@@ -293,7 +293,7 @@ main .banner::after {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 26px;
   /* or 157% */
   letter-spacing: -0.01em;
   /* Common/Secondary */
@@ -345,7 +345,7 @@ main .banner::after {
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 26px;
   letter-spacing: -0.01em;
   margin-bottom: 16px;
 }
@@ -378,7 +378,7 @@ main .banner::after {
   font-family: "Poppins";
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 26px;
   letter-spacing: -0.01em;
   text-align: center;
   margin-bottom: 0;
@@ -624,7 +624,7 @@ main .banner::after {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 26px;
   margin-bottom: 48px;
   letter-spacing: -0.01em;
   color: #616161;
@@ -732,7 +732,7 @@ main .banner::after {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 26px;
   /* or 157% */
 
   text-align: center;
@@ -851,7 +851,7 @@ main .banner::after {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 26px;
   margin-bottom: 0;
   /* or 157% */
 
@@ -1147,7 +1147,7 @@ main .banner::after {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 26px;
   /* identical to box height, or 157% */
 
   text-align: center;
@@ -1326,7 +1326,7 @@ main .banner::after {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 26px;
   /* or 157% */
 
   text-align: center;
@@ -1398,7 +1398,7 @@ main .banner::after {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 26px;
   /* or 157% */
 
   text-align: justify;
