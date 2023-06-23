@@ -50,10 +50,9 @@
   text-align: center;
   letter-spacing: -0.01em;
   background: linear-gradient(
-    97.26deg,
-    #c91f28 -49.23%,
-    #dad44c 24.61%,
-    #8dc53d 100%
+    196.86deg,
+    rgba(255, 255, 28, 0.9) -15.32%,
+    rgba(0, 195, 255, 0.9) 105.34%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -180,7 +179,16 @@ main .banner::after {
   -o-transform: translateY(-50%);
   z-index: 20;
 }
-
+.banner .svg_icon {
+  position: absolute;
+  top: 185px;
+  left: 67px;
+}
+.banner .svg_icon_2 {
+  position: absolute;
+  bottom: 161px;
+  left: 461px;
+}
 .banner-content .banner-heading {
   font-family: "Poppins";
   font-weight: 400;
@@ -195,10 +203,10 @@ main .banner::after {
 }
 .banner-heading #typewriter-text {
   background: linear-gradient(
-    97.94deg,
-    #c91f28 0%,
-    #dad44c 49.48%,
-    #8dc53d 100%
+    160.18deg,
+    #833ab4 12.29%,
+    #fd1d1d 44.59%,
+    #fcb045 78.25%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -207,10 +215,10 @@ main .banner::after {
 }
 .banner-heading #typewriter-suffix {
   background: linear-gradient(
-    97.94deg,
-    #c91f28 0%,
-    #dad44c 49.48%,
-    #8dc53d 100%
+    160.18deg,
+    #833ab4 12.29%,
+    #fd1d1d 44.59%,
+    #fcb045 78.25%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -267,6 +275,29 @@ main .banner::after {
 /* coach */
 .coach {
   margin-bottom: 60px;
+  position: relative;
+}
+.coach .svg_left {
+  position: absolute;
+  left: 0;
+  transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+  z-index: -1;
+}
+
+.coach .svg_left img,
+.coach .svg_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coach .svg_right {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  transform: translateY(85%);
+  -webkit-transform: translateY(85%);
+  z-index: -1;
 }
 .coach .section-inner h3 {
   font-family: "Poppins";
@@ -277,16 +308,20 @@ main .banner::after {
   /* or 130% */
 
   letter-spacing: -0.01em;
+  color: 121212;
 
+  margin-bottom: 24px;
+}
+.coach .section-inner h3 span {
   background: linear-gradient(
-    97.94deg,
-    #c91f28 0%,
-    #c6c041 49.48%,
-    #8dc53d 100%
+    160.18deg,
+    #833ab4 12.29%,
+    #fd1d1d 44.59%,
+    #fcb045 78.25%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 24px;
+  background-clip: text;
 }
 .coach .section-inner p {
   font-family: "Poppins";
@@ -306,13 +341,13 @@ main .banner::after {
 }
 
 .coach .comerce-coach {
-  background: linear-gradient(
+  /* background: linear-gradient(
     97.94deg,
     #c91f28 0%,
     #dad44c 49.48%,
     #8dc53d 100%
-  );
-
+  ); */
+  background: linear-gradient(rgba(255, 255, 28, 1), rgba(0, 195, 255, 1));
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
@@ -343,11 +378,16 @@ main .banner::after {
 }
 .reason .section-subheading {
   font-family: "Poppins";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: -0.01em;
   margin-bottom: 16px;
+  /* Poppins/Desktop/H6 */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  background: linear-gradient(rgba(255, 255, 28, 1), rgba(0, 195, 255, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .reason .section-heading {
   font-weight: 500;
@@ -446,6 +486,18 @@ main .banner::after {
 }
 .isotope .section-subheading {
   margin-bottom: 72px;
+}
+.isotope .bg_1 {
+  position: absolute;
+  top: 0;
+  left: 143px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.isotope .bg_2 {
+  top: 54px;
+  right: 122px;
+  position: absolute;
 }
 .isotope-wrap ul {
   padding: 0;
@@ -1605,7 +1657,7 @@ main .banner::after {
     margin-bottom: 200px;
   }
   .banner .banner-content {
-    top: 60%;
+    /* top: 60%; */
   }
   .banner-slide-2 .section-inner {
     padding-bottom: 360px;

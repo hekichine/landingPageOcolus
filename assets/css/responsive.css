@@ -4,6 +4,12 @@
   }
 }
 @media (max-width: 1366px) {
+  .isotope .bg_1 {
+    left: 0;
+  }
+  .isotope .bg_2 {
+    right: 0;
+  }
   .masonry-isotope .col-content h3 {
     font-size: 30px;
     line-height: 36px;
@@ -137,6 +143,13 @@
   }
 }
 @media (max-width: 1023px) {
+  .isotope .bg_2,
+  .isotope .bg_1 {
+    display: none;
+  }
+  .coach .svg_right {
+    display: none;
+  }
   br {
     display: none !important;
   }
