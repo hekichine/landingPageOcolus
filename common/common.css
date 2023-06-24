@@ -34,15 +34,15 @@ h5,
 h6 {
   font-family: var(--ff-1);
   /* pointer-events: none; */
-  user-select: none;
+  /* user-select: none; */
 }
 p {
   /* pointer-events: none; */
-  user-select: none;
+  /* user-select: none; */
 }
 img {
-  user-select: none;
-  pointer-events: none !important;
+  /* user-select: none; */
+  /* pointer-events: none !important; */
 }
 .section-heading {
   font-family: var(--ff-1);
@@ -258,6 +258,16 @@ p {
     -moz-transform: translatex(-100%);
     -ms-transform: translatex(-100%);
     -o-transform: translatex(-100%);
+  }
+}
+@keyframes spinnerTabs {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 
