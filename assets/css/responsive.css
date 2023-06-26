@@ -159,6 +159,16 @@
   }
 }
 @media (max-width: 1023px) {
+  .mansory-isotope .content h5.title_1,
+  .mansory-isotope .content h5.title_2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .mansory-isotope .content p {
+    font-size: 14px;
+    line-height: 22px;
+  }
   .isotope .bg_2,
   .isotope .bg_1 {
     display: none;

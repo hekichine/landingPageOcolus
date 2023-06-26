@@ -295,6 +295,9 @@ p {
   }
 }
 @media (min-width: 1600px) {
+  .mansory-wrap.container {
+    --bs-gutter-x: 30px;
+  }
   .container {
     max-width: 1620px;
   }
