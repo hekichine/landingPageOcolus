@@ -272,6 +272,9 @@ p {
 }
 
 @media (min-width: 1240px) {
+  .t4s-gx-lg-30 {
+    --bs-gutter-x: 30px;
+  }
   .t4s-gx-lg-40 {
     --bs-gutter-x: 40px;
   }
@@ -283,6 +286,9 @@ p {
   }
   .t4s-gx-lg-90 {
     --bs-gutter-x: 90px;
+  }
+  .t4s-gy-lg-30 {
+    --bs-gutter-y: 30px;
   }
   .t4s-gy-lg-60 {
     --bs-gutter-y: 60px;

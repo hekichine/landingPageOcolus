@@ -86,16 +86,16 @@ $(document).ready(function () {
 
   // masonry layoutmode
 
-  $(".masonry-row").isotope({
-    itemSelector: ".masonry-item",
-    masonry: {
-      columnWidth: 1,
-    },
-  });
+  // $(".masonry-row").isotope({
+  //   itemSelector: ".masonry-item",
+  //   masonry: {
+  //     columnWidth: 1,
+  //   },
+  // });
 
   // video popup
   $(".play-btn-popup").magnificPopup({
-    disableOn: 700,
+    disableOn: 767,
     type: "iframe",
     mainClass: "mfp-fade",
     removalDelay: 160,

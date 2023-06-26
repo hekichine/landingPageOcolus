@@ -52,6 +52,22 @@
   }
 }
 @media (max-width: 1200px) {
+  .mansory-isotope .mansory-ico {
+    top: 0;
+    left: 10%;
+  }
+  .mansory-isotope .mansory-ico_2 {
+    top: 0;
+    right: 10%;
+  }
+  .mansory-isotope .title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .mansory-isotope .subtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
   .t4s-topbar .section-wrap {
     gap: 15px;
     padding: 15px 32px;
@@ -351,6 +367,16 @@
   }
 }
 @media (max-width: 992px) {
+  .tabs .tabs-ico,
+  .tabs .tabs-ico_2 {
+    opacity: 0.6;
+  }
+  .tabs .tabs-ico {
+    left: 0;
+  }
+  .tabs .tabs-ico_2 {
+    right: 0;
+  }
   .masonry-isotope .col-wrap {
     flex-wrap: nowrap;
   }
@@ -511,6 +537,10 @@
   }
 }
 @media (max-width: 525px) {
+  .mansory-isotope .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
   .ecomposer .form-register input {
     width: 100%;
   }

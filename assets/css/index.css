@@ -792,6 +792,7 @@ main .banner::after {
   position: absolute;
   left: 71px;
   top: 121px;
+  z-index: -1;
 }
 .tabs .tabs-ico_2 {
   position: absolute;
@@ -799,6 +800,7 @@ main .banner::after {
   right: 68px;
   animation: spinnerTabs linear 10s infinite;
   -webkit-animation: spinnerTabs linear 10s infinite;
+  z-index: -1;
 }
 .tabs .des {
   font-family: "Poppins";
@@ -886,6 +888,7 @@ main .banner::after {
   line-height: 52px;
   letter-spacing: -0.4px;
   font-weight: 400;
+  margin-bottom: 0;
 }
 .mansory-isotope .title span {
   font-weight: 600;
@@ -900,6 +903,7 @@ main .banner::after {
   line-height: 28px;
   font-family: "Poppins";
   font-weight: 400;
+  margin-bottom: 0;
 }
 .mansory-isotope .subtitle span {
   font-weight: 600;
@@ -919,6 +923,15 @@ main .banner::after {
 }
 .mansory-isotope .section-tophead {
   margin-bottom: 64px;
+}
+.mansory-isotope .col-inner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
 }
 /* banner slide 2 */
 .banner-slide-2 .slide_count {
