@@ -117,6 +117,12 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
     let current_pos = $(this).scrollTop();
     let deg = (current_pos / body_height) * 100;
+    // console.log(
+    //   "current position: ",
+    //   current_pos,
+    //   "/ body height",
+    //   body_height
+    // );
 
     $(".btt-progress").css(
       "background",
@@ -124,11 +130,16 @@ $(document).ready(function () {
         deg * 3.6
       }deg , rgb(255, 255, 255) 0deg)`
     );
+    $(".lm-bar-load").css("width", `${deg}%`);
 
     current_pos > 100
       ? $(".back-to-top").addClass("active")
       : $(".back-to-top").removeClass("active");
     // console.log(current_pos, $(document).height());
+
+    current_pos > 100
+      ? $(".lm-bar-load").addClass("lm-active ")
+      : $(".lm-bar-load").removeClass("lm-active ");
   });
   $(document).on("click", ".back-to-top", function () {
     $(window).scrollTop(0);

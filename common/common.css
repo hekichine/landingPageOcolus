@@ -382,8 +382,8 @@ p {
 }
 .back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 15px;
+  right: 15px;
   box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -431,4 +431,19 @@ p {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+.lm-bar-load {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  background-color: #c91f28;
+  height: 0px;
+  font-size: 20px;
+}
+.lm-active {
+  position: fixed;
+  z-index: 999999;
+  height: 2px;
 }
