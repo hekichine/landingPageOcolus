@@ -213,6 +213,10 @@ p {
   height: 100%;
   object-fit: cover;
 }
+*::after,
+*::before {
+  pointer-events: none;
+}
 @keyframes marquee {
   0% {
     transform: translateY(0);
@@ -319,6 +323,12 @@ p {
   .t4s-gy-xxl-72 {
     --bs-gutter-y: 72px;
   }
+  .t4s-gy-xxl-48 {
+    --bs-gutter-y: 48px;
+  }
+  .t4s-gy-xxl-64 {
+    --bs-gutter-y: 64px;
+  }
   .t4s-gy-xxl-60 {
     --bs-gutter-y: 60px;
   }
@@ -326,6 +336,7 @@ p {
     --bs-gutter-x: 60px;
   }
 }
+
 @media (max-width: 1024px) {
   a.btn {
     padding: 15px 20px !important;
