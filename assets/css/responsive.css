@@ -667,6 +667,16 @@
   }
 }
 @media (max-width: 525px) {
+  .ecomposer .form-register {
+    display: block !important;
+    text-align: start;
+  }
+  .ecomposer .form-layout {
+    display: block;
+  }
+  .ecomposer .form-wrap {
+    display: block !important;
+  }
   .mansory-isotope .content h5.title_1,
   .mansory-isotope .content h5.title_2 {
     font-size: 16px;
@@ -697,9 +707,10 @@
   .ecomposer .form-register input {
     width: 100%;
   }
-  .ecomposer .form-register .btn {
-    width: 100%;
+  .ecomposer .form-register .input-wrap {
+    margin-bottom: 5px;
   }
+
   .t4s-topbar #countdown div span:nth-child(1) {
     font-size: 16px;
     line-height: 19px;
