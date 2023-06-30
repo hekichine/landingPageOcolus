@@ -56,19 +56,19 @@
   }
 }
 @media (max-width: 1200px) {
-  .mansory-isotope .mansory-ico {
+  .masonry-isotope .masonry-ico {
     top: 0;
     left: 10%;
   }
-  .mansory-isotope .mansory-ico_2 {
+  .masonry-isotope .masonry-ico_2 {
     top: 0;
     right: 10%;
   }
-  .mansory-isotope .title {
+  .masonry-isotope .title {
     font-size: 30px;
     line-height: 36px;
   }
-  .mansory-isotope .subtitle {
+  .masonry-isotope .subtitle {
     font-size: 14px;
     line-height: 22px;
   }
@@ -179,13 +179,13 @@
   .coach .svg_right {
     transform: translateY(50%);
   }
-  .mansory-isotope .content h5.title_1,
-  .mansory-isotope .content h5.title_2 {
+  .masonry-isotope .content h5.title_1,
+  .masonry-isotope .content h5.title_2 {
     font-size: 24px;
     line-height: 30px;
   }
 
-  .mansory-isotope .content p {
+  .masonry-isotope .content p {
     font-size: 14px;
     line-height: 22px;
   }
@@ -252,20 +252,20 @@
   .tabs .tabs-ico {
     display: none;
   }
-  .mansory-isotope .title br {
+  .masonry-isotope .title br {
     display: block !important;
   }
-  .mansory-isotope .section-tophead {
+  .masonry-isotope .section-tophead {
     margin-bottom: 30px;
   }
-  .mansory-isotope .item-5 .content,
-  .mansory-isotope .item-6 .content,
-  .mansory-isotope .item-7 .content,
-  .mansory-isotope .item-9 .content,
-  .mansory-isotope .item-11 .content {
+  .masonry-isotope .item-5 .content,
+  .masonry-isotope .item-6 .content,
+  .masonry-isotope .item-7 .content,
+  .masonry-isotope .item-9 .content,
+  .masonry-isotope .item-11 .content {
     bottom: 35px;
   }
-  .mansory-isotope .section-inner {
+  .masonry-isotope .section-inner {
     margin-bottom: 0;
   }
   .banner-slide-2 .bn-slide-ico_2 {
@@ -499,8 +499,8 @@
   .coach {
     margin-bottom: 0;
   }
-  .mansory-isotope .content h5.title_1,
-  .mansory-isotope .content h5.title_2 {
+  .masonry-isotope .content h5.title_1,
+  .masonry-isotope .content h5.title_2 {
     font-size: 18px;
     line-height: 26px;
   }
@@ -524,14 +524,14 @@
     border-radius: 16px;
     margin-bottom: 0;
   }
-  .mansory-isotope .item-2 h4 {
+  .masonry-isotope .item-2 h4 {
     font-size: 60px;
   }
   .banner-slide-2 .bn-slide-ico {
     top: 0;
     transform: unset;
   }
-  .mansory-isotope .content {
+  .masonry-isotope .content {
     text-align: center !important;
     align-items: center !important;
   }
@@ -677,12 +677,12 @@
   .ecomposer .form-wrap {
     display: block !important;
   }
-  .mansory-isotope .content h5.title_1,
-  .mansory-isotope .content h5.title_2 {
+  .masonry-isotope .content h5.title_1,
+  .masonry-isotope .content h5.title_2 {
     font-size: 16px;
     line-height: 22px;
   }
-  .mansory-isotope .content p {
+  .masonry-isotope .content p {
     font-size: 13px;
     line-height: 17px;
   }
@@ -690,17 +690,17 @@
     font-size: 24px;
     line-height: 30px;
   }
-  .mansory-isotope .item-5 .content,
-  .mansory-isotope .item-6 .content,
-  .mansory-isotope .item-7 .content,
-  .mansory-isotope .item-9 .content,
-  .mansory-isotope .item-11 .content {
+  .masonry-isotope .item-5 .content,
+  .masonry-isotope .item-6 .content,
+  .masonry-isotope .item-7 .content,
+  .masonry-isotope .item-9 .content,
+  .masonry-isotope .item-11 .content {
     bottom: 10px;
   }
   .tabs .tabs-group {
     justify-content: flex-start;
   }
-  .mansory-isotope .title {
+  .masonry-isotope .title {
     font-size: 24px;
     line-height: 30px;
   }

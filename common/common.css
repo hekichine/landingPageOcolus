@@ -299,7 +299,7 @@ p {
   }
 }
 @media (min-width: 1600px) {
-  .mansory-wrap.container {
+  .masonry-wrap.container {
     --bs-gutter-x: 30px;
   }
   .container {
