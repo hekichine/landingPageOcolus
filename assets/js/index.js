@@ -117,6 +117,12 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
     let current_pos = $(this).scrollTop();
     let deg = (current_pos / body_height) * 100;
+
+    // let scrollTop2 = window.scrollY;
+    // let docHeight = document.body.offsetHeight;
+    // let winHeight = window.innerHeight;
+    // let scrollPercent = scrollTop2 / (docHeight - winHeight);
+    // let scrollPercentRounded = Math.round(scrollPercent * 100);
     // console.log(
     //   "current position: ",
     //   current_pos,

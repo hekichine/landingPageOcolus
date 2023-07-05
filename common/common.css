@@ -126,6 +126,7 @@ a.btn.btn-default:hover {
 a.btn.btn-outline:hover {
   --bg-color: var(--btn-bg-color);
   --color: var(--btn-color);
+  --border-color: var(--btn-bg-color);
 }
 .btn-default {
   --border-color: var(--btn-border-color);
@@ -446,4 +447,7 @@ p {
   position: fixed;
   z-index: 999999;
   height: 1px;
+}
+.partner {
+  display: none;
 }
