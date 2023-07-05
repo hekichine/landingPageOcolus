@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // count down top bar
-  $("#countdown").countdown("2024/10/10", function (event) {
+  $("#countdown").countdown("2023/11/10", function (event) {
     $(this).html(
       event.strftime(
         "<div><span>%D</span> <span>Days</span></div> <div><span>%H</span> <span>Hours</span></div> <div><span>%M</span> <span>Mins</span></div> <div><span>%S</span> <span>Secs</span></div>"
@@ -48,6 +48,7 @@ $(document).ready(function () {
       $(this).addClass("is-checked");
     });
   });
+  //  install EC
   $(".install-ec").click(function (e) {
     e.preventDefault();
     window.open(
@@ -112,31 +113,23 @@ $(document).ready(function () {
     $(this).next(".faq-content").slideToggle();
   });
   // back to top
-  let body_height = $(document).height();
-
   $(window).on("scroll", function () {
     let current_pos = $(this).scrollTop();
-    let deg = (current_pos / body_height) * 100;
 
-    // let scrollTop2 = window.scrollY;
-    // let docHeight = document.body.offsetHeight;
-    // let winHeight = window.innerHeight;
-    // let scrollPercent = scrollTop2 / (docHeight - winHeight);
-    // let scrollPercentRounded = Math.round(scrollPercent * 100);
-    // console.log(
-    //   "current position: ",
-    //   current_pos,
-    //   "/ body height",
-    //   body_height
-    // );
+    // caculator percent
+    let scrollTop2 = $(window).scrollTop();
+    let docHeight = $(document).height();
+    let winHeight = $(window).height();
+    let scrollPercent = scrollTop2 / (docHeight - winHeight);
+    let scrollPercentRounded = Math.round(scrollPercent * 100);
 
     $(".btt-progress").css(
       "background",
       `conic-gradient(rgba(0, 0, 0,0.25) ${
-        deg * 3.6
+        scrollPercentRounded * 3.6
       }deg , rgb(255, 255, 255) 0deg)`
     );
-    $(".lm-bar-load").css("width", `${deg}%`);
+    $(".lm-bar-load").css("width", `${scrollPercentRounded}%`);
 
     current_pos > 100
       ? $(".back-to-top").addClass("active")

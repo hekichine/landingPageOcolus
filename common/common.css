@@ -446,7 +446,7 @@ p {
 .lm-active {
   position: fixed;
   z-index: 999999;
-  height: 1px;
+  height: 2px;
 }
 .partner {
   display: none;
