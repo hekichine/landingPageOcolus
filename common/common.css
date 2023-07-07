@@ -449,7 +449,7 @@ p {
   height: 2px;
 }
 .partner {
-  display: none;
+  display: block;
 }
 .btn-filter-group::-webkit-scrollbar-track,
 .tabs-group::-webkit-scrollbar-track {

@@ -1411,6 +1411,9 @@ figure.zoom:hover img {
   background: #c91f28;
   border-radius: 39px;
 }
+.partner .partner-btn {
+  margin-top: 20px;
+}
 /* footer and header style */
 .show-style .section-inner {
   background: #fbfffa;
@@ -1832,6 +1835,9 @@ figure.zoom:hover img {
 @media (min-width: 1366px) {
   .coach {
     margin-bottom: 100px;
+  }
+  .partner .partner-btn {
+    margin-top: 55px;
   }
 }
 @media (min-width: 1400px) {
