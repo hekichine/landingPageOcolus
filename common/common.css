@@ -451,3 +451,12 @@ p {
 .partner {
   display: none;
 }
+.btn-filter-group::-webkit-scrollbar-track,
+.tabs-group::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+.btn-filter-group::-webkit-scrollbar-thumb,
+.tabs-group::-webkit-scrollbar-thumb {
+  background: #c91f28;
+  border-radius: 10px;
+}

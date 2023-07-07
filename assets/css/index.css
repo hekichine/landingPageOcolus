@@ -587,9 +587,51 @@ main .banner::after {
 .isotope .isotope-item .title-badge.hot {
   background: #c91f28;
 }
-.isotope .img-wrap:hover,
-.tabs .img-wrap:hover {
+.isotope .img-wrap:hover {
   transform: translateY(-10px);
+}
+.isotope .overlay {
+  background: rgba(27, 27, 29, 0.8);
+  border-radius: 0;
+  color: #fff;
+  opacity: 0;
+  transition: 0.35s ease;
+}
+.isotope .item-inner:hover .overlay {
+  opacity: 1;
+}
+.isotope .overlay p {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 29px;
+  color: #fff;
+}
+.isotope .overlay p span {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 100%;
+  color: #293341;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.isotope .overlay a {
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 35px;
+  color: #fff;
+}
+.isotope .overlay .icon {
+  margin-bottom: 5px;
+}
+.isotope .overlay a:hover {
+  background-color: #c91f28;
+  border-color: #c91f28;
 }
 /* ecomposer */
 
@@ -911,6 +953,25 @@ main .banner::after {
 
 .tabs .tabs-content.active .col-item {
   transform: scale(1);
+}
+.tabs figure.zoom {
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-position: 50% 50%;
+  overflow: hidden;
+  cursor: zoom-in;
+  margin: 0;
+}
+figure.zoom img {
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s;
+  display: block;
+}
+figure.zoom:hover img {
+  opacity: 0;
 }
 /* masonry */
 .masonry-isotope .section-inner {

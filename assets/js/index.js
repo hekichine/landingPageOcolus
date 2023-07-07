@@ -143,4 +143,19 @@ $(document).ready(function () {
   $(document).on("click", ".back-to-top", function () {
     $(window).scrollTop(0);
   });
+
+  // zoom image
+
+  $("figure").on("mousemove", function (event) {
+    let zoomer = event.currentTarget;
+    event.offsetX
+      ? (offsetX = event.offsetX)
+      : (offsetX = event.touches[0].pageX);
+    event.offsetY
+      ? (offsetY = event.offsetY)
+      : (offsetX = event.touches[0].pageX);
+    x = (offsetX / zoomer.offsetWidth) * 100;
+    y = (offsetY / zoomer.offsetHeight) * 100;
+    zoomer.style.backgroundPosition = x + "% " + y + "%";
+  });
 });
