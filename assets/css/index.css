@@ -654,13 +654,21 @@ main .banner::after {
   overflow: hidden;
   border-radius: 40px;
   -webkit-border-radius: 40px;
-  margin-bottom: 64px;
+  margin-bottom: 50px;
   position: relative;
 }
 .ecomposer .col-img .img-wrap .img {
   border-radius: 24px;
   -webkit-border-radius: 24px;
   overflow: hidden;
+}
+.ecomposer h4 {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 30px;
+  color: #293341;
 }
 .ecomposer .eco-ico {
   position: absolute;

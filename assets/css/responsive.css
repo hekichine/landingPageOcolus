@@ -274,6 +274,11 @@
   .ecomposer .col-img .img-wrap {
     margin-bottom: 30px;
   }
+  .ecomposer h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
   .ecomposer .form-register .btn {
     padding: 15px 30px !important;
   }
@@ -510,6 +515,11 @@
   }
 }
 @media (max-width: 768px) {
+  .ecomposer h4 {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
   .hero_image .section-inner > * {
     padding: 0 15px;
   }
@@ -700,7 +710,6 @@
 @media (max-width: 525px) {
   .ecomposer .form-register {
     display: block !important;
-    text-align: start;
   }
   .ecomposer .form-layout {
     display: block;
