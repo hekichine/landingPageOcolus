@@ -158,4 +158,19 @@ $(document).ready(function () {
     y = (offsetY / zoomer.offsetHeight) * 100;
     zoomer.style.backgroundPosition = x + "% " + y + "%";
   });
+
+  // hide show trial button
+  let prevScrollpos = $(window).offset.top;
+  $(document).on("scroll", function () {
+    // sticky
+    let currentScrollPos = $(window).scrollTop();
+    if ($(window).scrollTop() > 300) {
+      if (prevScrollpos > currentScrollPos) {
+        $(".t4s_btn_trial").addClass("is--show");
+      } else {
+        $(".t4s_btn_trial").removeClass("is--show");
+      }
+    }
+    prevScrollpos = currentScrollPos;
+  });
 });
